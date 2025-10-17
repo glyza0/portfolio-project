@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maligao_GlyzaMae_Lab5.html</title>
+  <style>
+    /* ======== Global Styles ======== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #3b0a45, #7a1e6b, #c84b8b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ======== Card Container ======== */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      width: 90%;
+      max-width: 850px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* ======== Profile Header ======== */
+    .profile-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-header h1 {
+      font-size: 2rem;
+      margin-top: 15px;
+    }
+
+    .profile-header p {
+      font-size: 1rem;
+      color: #ffd6e8;
+    }
+
+    /* ======== Sections ======== */
+    section {
+      margin: 25px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #ffd6e8;
+      border-left: 5px solid #f8a6d2;
+      padding-left: 10px;
+    }
+
+    section p {
+      font-size: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: "✨ ";
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .quote {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 14px;
+      border-left: 5px solid #ffb6c1;
+      border-radius: 8px;
+      font-style: italic;
+      color: #ffe6f0;
+      margin-top: 10px;
+    }
+
+    /* ======== Footer ======== */
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #ffbad5;
+    }
+
+    .contact a {
+      color: #ffd6e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .profile-card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <img src="https://scontent.fdvo1-2.fna.fbcdn.net/v/t39.30808-1/560152090_790258487126885_8874345512750836622_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGKu37F8qsXX5DRJ3tXm2vspC36oLC3IRykLfqgsLchHLJbzCI-JNAyuKJYSrGWabfR5Q3Kxh-c44jEjkOJ0-IP&_nc_ohc=cWkPazdSf7IQ7kNvwGUtTMs&_nc_oc=AdkVh0q4H8KoFXZcI9jMiaW-XGWN9P_t__776g5GJx0TnpJKJIpOLo6VndYLSuBFQBiTNclQuVgx8wk1IpC7Dc1m&_nc_zt=24&_nc_ht=scontent.fdvo1-2.fna&_nc_gid=kyGsiD3MO3MvsKj5s2MpVQ&oh=00_AfeHagHe4HCWbkDGJglhljADqTwrlrYd1nTcPijWKtH7Ew&oe=68F2CD95" alt="Profile Picture">
+      <h1>Glyza Mae S. Maligao</h1>
+      <p>Front-End Developer | IT Student</p>
+    </div>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m an aspiring front-end developer who enjoys turning creative ideas into interactive websites. 
+        I’m passionate about learning new technologies, creating beautiful interfaces, and improving user experiences.
+      </p>
+    </section>
+
+    <section>
+      <h2>My Education</h2>
+      <ul>
+        <li><strong>Davao del Sur State College</strong> — Diploma in Information Technology (2025–2026)</li>
+        <li><strong>Leopoldo D. Dacera Sr. Integrated School</strong> — Senior High (2022–2023)</li>
+        <li><strong>Leopoldo D. Dacera Sr. Integrated School</strong> — High School (2020–2021)</li>
+        <li><strong>Lamlinol Elementary School</strong> — Elementary (2016–2017)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My Experience</h2>
+      <p>
+        <strong>Intern — Admission Office (Davao del Sur State College, July 2025–August 2026)</strong><br><br>
+        Helping new students during the enrollment process was a rewarding experience. 
+        I learned the value of communication and organization while guiding first-year students through 
+        document checks and course selections. It taught me patience, teamwork, and the importance 
+        of making others feel welcomed.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Document Organization & Data Entry</li>
+        <li>Communication & Collaboration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Favorite Quote</h2>
+      <p class="quote">“The best way to predict your future is to create it.”</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p class="contact">
+        📧 <a href="mailto:glyzamaemaligao@gmail.com">glyzamaemaligao@gmail.com</a><br>
+        💻 <a href="https://github.com/kingrey020" target="_blank">GitHub</a> |
+        🔗 <a href="https://www.facebook.com/GlyzaMae0" target="_blank">Facebook</a>
+      </p>
+    </section>
+
+    <footer>© 2025 Glyza Mae Maligao — Lab 5: Unique Portfolio Card</footer>
+  </div>
+
+</body>
+</html>
